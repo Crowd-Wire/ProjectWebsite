@@ -34,7 +34,7 @@
     <style>
         #video-laptop {
             position: relative;
-            padding-top: 25px;
+            padding-top: 5px;
             padding-bottom: 67.5%;
             height: 0;
         }
@@ -99,13 +99,13 @@
                                 <span class="icon-bar"></span>
                             </button>
                             <a href="#" class="navbar-brand logo">
-                                <h2>crowdwire</h2>
+                                <h2 id="showMenu" style="cursor: pointer;">CrowdWire</h2>
                             </a>
                         </div>
 
                         <!--Logo/-->
                         <nav class="collapse navbar-collapse" id="primary-menu">
-                            <ul class="nav navbar-nav navbar-right">
+                            <ul class="nav  navbar-nav navbar-right">
                                 <li class="active"><a href="#home-page">Home</a></li>
                                 <li><a href="#service-page">Features</a></li>
                                 <li><a href="#feature-page">Goals</a></li>
@@ -116,7 +116,6 @@
                                 <li><a href="#contact-page">Contact</a></li>
                             </ul>
                         </nav>
-                        <h1><button id="showMenu">Show Menu</button></h1>
 
                     </div>
                 </div>
@@ -128,24 +127,24 @@
                 <header class="header-area overlay full-height relative v-center" id="home-page">
                     <div class="absolute anlge-bg"></div>
                     <div class="container">
-                        <div class="row v-center">
-                            <div class="col-xs-12 col-md-7 header-text">
+                        <div class="row v-center" style= "margin-top: 5%;">
+                            <div class="col-lg-5 col-xs-4 col-md-4 header-text">
                                 <h2>Connect in another Level</h2>
                                 <p> More flexible,interactive and better video-conferencing.</p>
                                 <a href="#" class="button white">Watch video</a>
                             </div>
-
+                            <div class=" col-lg-7 col-xs-8 col-md-8" style="padding-right: 0%;">
+                                <div id="video-laptop">
+                                    <iframe width="460" height="310" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div>
 
                         </div>
-
+                        
                     </div>
                 </header>
                 <!--Header-area/-->
-                <div id="video-laptop">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe width="560" height="390" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0"
-                        allowfullscreen></iframe>
-                </div>
 
                 <!--Feature-area-->
                 <section class="gray-bg section-padding" id="service-page">
