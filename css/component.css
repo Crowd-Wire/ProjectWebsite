@@ -295,7 +295,7 @@ html, body, .perspective {
 
 /* Effect Rotate Left */
 .effect-rotateleft {
-	background: #e96e4f;
+	background: #2DBAB2;
 }
 
 .effect-rotateleft .main_container {
@@ -320,6 +320,8 @@ html, body, .perspective {
 
 .effect-rotateleft .outer-nav a {
 	opacity: 0;
+	color: #fff;
+	font-weight: 500;
 	-webkit-transform: translateX(350px) translateZ(-1000px);
 	transform: translateX(350px) translateZ(-1000px);
 	-webkit-transition: -webkit-transform 0.4s, opacity 0.4s;
