@@ -198,6 +198,11 @@
     /* Preloader Js
     ===================*/
     $(window).on("load", function () {
+        $("figure").mouseleave(
+            function() {
+            $(this).removeClass("hover");
+            }
+        );
         $('.preloader').fadeOut(500);
     });
 })(jQuery);
