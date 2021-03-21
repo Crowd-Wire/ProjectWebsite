@@ -12,7 +12,8 @@
     <title>CrowdWire- Massive Online Meeting</title>
     <!-- Place favicon.ico in the root directory -->
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-    <link rel="shortcut icon" type="image/ico" href="images/favicon.ico" />
+    <!-- <link rel="shortcut icon" type="image/ico" href="images/favicon.ico" /> -->
+    <link rel="icon" href="images/logo_transparent.png">
     <!-- Plugin-CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
@@ -57,17 +58,23 @@
         .team-photo {
             height: 35rem;
             overflow: hidden;
-            background-position: center center;
+            /* background-position: center center; */
         }
         
         .team-photo img {
             filter: grayscale(100%);
-            height: auto;
+            width: 100%;
+            height: 360px;
             object-fit: cover;
+            
         }
 
         .box-icon img {
             height: 130px;
+        }
+
+        .single-blog .blog-content {
+            height: 12em;
         }
         
 
@@ -100,8 +107,11 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <a href="#" class="navbar-brand logo">
-                                <h2 id="showMenu" style="cursor: pointer;">CrowdWire</h2>
+                            <a href="#" class="navbar-brand logo" >
+                                <div style="display: flex">
+                                    <img src="images/logo_transparent_white.png" style="width: 40px; height: 40px; margin: auto 10px auto 0;" >
+                                    <h2 id="showMenu" style="font-size: 30px; cursor: pointer; margin: auto 0 auto 0" >CrowdWire</h2>
+                                </div>
                             </a>
                         </div>
 
@@ -110,12 +120,12 @@
                             <ul class="nav  navbar-nav navbar-right">
                                 <li class="active"><a href="#home-page">Home</a></li>
                                 <li><a href="#price-page">About</a></li>
+                                <li><a href="#team-page">Team</a></li>
                                 <li><a href="#service-page">Goals</a></li>
                                 <!-- <li><a href="#feature-page">Goals</a></li> /-->
-                                <li><a href="#team-page">Team</a></li>
                                 <li><a href="#faq-page">LogBook</a></li>
                                 <li><a href="#blog-page">Our Work</a></li>
-                                <li><a href="#contact-page">Contact</a></li>
+                                <!-- <li><a href="#contact-page">Contact</a></li> -->
                             </ul>
                         </nav>
 
@@ -149,7 +159,7 @@
                 <!--Header-area/-->
             
                 <!--About Us-area/-->
-                <section class="price-area overlay section-padding" id="price-page">
+                <section class="price-area section-padding" id="price-page">
                     <div class="container">
                         <div class="row">
                             <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
@@ -171,81 +181,10 @@
                 <!--About Us-area/-->
 
 
-                <!--Feature-area-->
-                <section class="gray-bg section-padding" id="service-page">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
-                                <div class="page-title">
-                                    <h2>CROWDWIRE GOALS</h2>
-                                    <p>Check out the goals of our System, these will be our main Focus for the Project</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-4">
-                                <div class="box">
-                                    <div class="box-icon">
-                                        <img src="images/icon-map.png" alt="">
-                                    </div>
-                                    <h4>EDIT CUSTOM MAPS</h4>
-                                    <p> Simple and easy to use Map Editor, to make your video-conferencing environment at your Like.</p>
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-sm-4">
-                                <div class="box">
-                                    <div class="box-icon">
-                                        <img src="images/icon-chat.png" alt="">
-                                    </div>
-                                    <h4>PROXIMITY CHAT</h4>
-                                    <p> We aim to Take your calls to the next level with the Proximity Chat Feature. The closer you get to a Person
-                                        the easier is to hear and see.</p>
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-sm-4">
-                                <div class="box">
-                                    <div class="box-icon">
-                                        <img src="images/icon-broadcast.png" alt="">
-                                    </div>
-                                    <h4>BROADCASTING</h4>
-                                    <p>Allow some users to speak to the entire audience, useful for conferences, classes, etc.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-4">
-                                <div class="box">
-                                    <div class="box-icon">
-                                        <img src="images/icon-private.png" alt="">
-                                    </div>
-                                    <h4>PRIVATE ROOMS</h4>
-                                    <p> Create private Rooms in your World, to comunicate privately.</p>
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-sm-4">
-                                <div class="box">
-                                    <div class="box-icon">
-                                        <img src="images/icon-file.png" alt="">
-                                    </div>
-                                    <h4>FILE SHARING</h4>
-                                    <p> Share private files with your friends, co-workers, and with whoever you want.</p>
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-sm-4">
-                                <div class="box">
-                                    <div class="box-icon">
-                                        <img src="images/icon-meeting.png" alt="">
-                                    </div>
-                                    <h4>MASSIVE MEETINGS SCALIBILITY</h4>
-                                    <p> Host conferences, classes or meetings with a large amount of users.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                
                 <!--Feature-area/-->
 
-                <section class="angle-bg sky-bg section-padding">
+                <!-- <section class="angle-bg sky-bg section-padding">
                     <div class="container">
                         <div class="row">
                             <div class="col-xs-12">
@@ -364,7 +303,6 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- Indicators -->
                                     <ol class="carousel-indicators caption-indector">
                                         <li data-target="#caption_slide" data-slide-to="0" class="active">
                                             <strong>Lorem ipsum </strong>consectetur adipisicing elit.
@@ -383,7 +321,7 @@
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> -->
 
 
 
@@ -466,7 +404,7 @@
 
 
 
-                <section class="section-padding gray-bg" id="team-page">
+                <section class="section-padding overlay gray-bg" id="team-page">
                     <div class="container">
                         <div class="row">
                             <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
@@ -518,7 +456,7 @@
                             <div class="col-xs-12 col-sm-6 col-md-4">
                                 <div class="single-team">
                                     <div class="team-photo">
-                                        <img src="images/Bruno_Bastos.jpg" alt="">
+                                        <img style="size:100%" src="images/Bruno_Bastos.jpg" alt="">
                                     </div>
                                     <h4>Bruno Bastos</h4>
                                     <h6>Architect</h6>
@@ -558,10 +496,83 @@
                     </div>
                 </section>
 
+                <!--Feature-area-->
+                <section class="gray-bg section-padding" id="service-page">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
+                                <div class="page-title">
+                                    <h2>CROWDWIRE GOALS</h2>
+                                    <p>Check out the goals of our System, these will be our main Focus for the Project</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-4">
+                                <div class="box">
+                                    <div class="box-icon">
+                                        <img src="images/icon-map.png" alt="">
+                                    </div>
+                                    <h4>EDIT CUSTOM MAPS</h4>
+                                    <p> Simple and easy to use Map Editor, to make your video-conferencing environment at your Like.</p>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-4">
+                                <div class="box">
+                                    <div class="box-icon">
+                                        <img src="images/icon-chat.png" alt="">
+                                    </div>
+                                    <h4>PROXIMITY CHAT</h4>
+                                    <p> We aim to Take your calls to the next level with the Proximity Chat Feature. The closer you get to a Person
+                                        the easier is to hear and see.</p>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-4">
+                                <div class="box">
+                                    <div class="box-icon">
+                                        <img src="images/icon-broadcast.png" alt="">
+                                    </div>
+                                    <h4>BROADCASTING</h4>
+                                    <p>Allow some users to speak to the entire audience, useful for conferences, classes, etc.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-4">
+                                <div class="box">
+                                    <div class="box-icon">
+                                        <img src="images/icon-private.png" alt="">
+                                    </div>
+                                    <h4>PRIVATE ROOMS</h4>
+                                    <p> Create private Rooms in your World, to comunicate privately.</p>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-4">
+                                <div class="box">
+                                    <div class="box-icon">
+                                        <img src="images/icon-file.png" alt="">
+                                    </div>
+                                    <h4>FILE SHARING</h4>
+                                    <p> Share private files with your friends, co-workers, and with whoever you want.</p>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-4">
+                                <div class="box">
+                                    <div class="box-icon">
+                                        <img src="images/icon-meeting.png" alt="">
+                                    </div>
+                                    <h4>MASSIVE MEETINGS SCALIBILITY</h4>
+                                    <p> Host conferences, classes or meetings with a large amount of users.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
 
 
-                <section class="testimonial-area section-padding gray-bg overlay">
+
+                <!-- <section class="testimonial-area section-padding gray-bg overlay">
                     <div class="container">
                         <div class="row">
                             <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
@@ -633,10 +644,10 @@
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> -->
 
 
-                <section class="gray-bg section-padding" id="faq-page">
+                <section class="gray-bg overlay section-padding" id="faq-page">
                     <div class="container">
                         <div class="row">
                             <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
@@ -700,8 +711,8 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-xs-12 col-sm-4">
-                                <a href="https://github.com/Crowd-Wire/CrowdWire">
+                            <div class="col-xs-12 col-sm-4" style="height:500px">
+                                <a target="_blank" href="https://github.com/Crowd-Wire/CrowdWire">
                                     <div class="single-blog">
                                         <div class="blog-photo">
                                             <img style="margin-left: auto; margin-right: auto; display: block; height:200px" src="https://image.flaticon.com/icons/png/128/1005/1005141.png" alt="">
@@ -713,9 +724,9 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="col-xs-12 col-sm-4">
+                            <div class="col-xs-12 col-sm-4"style="height:500px">
                                 <div class="single-blog">
-                                    <a href="https://github.com/Crowd-Wire/ProjectDocumentation">
+                                    <a target="_blank" href="https://github.com/Crowd-Wire/ProjectDocumentation">
                                         <div class="blog-photo">
                                             <img style="margin-left: auto; margin-right: auto; display: block; height:200px" src="https://image.flaticon.com/icons/png/128/3662/3662789.png" alt="">
                                         </div>
@@ -727,8 +738,8 @@
                                 </div>
                             </div>
                             <div class="col-sm-4"></div>
-                            <div class="col-xs-12 col-sm-4">
-                                <a href="https://github.com/Crowd-Wire/ProjectDocumentation/blob/master/Images/Calendar.jpg">
+                            <div class="col-xs-12 col-sm-4" style="height:500px">
+                                <a target="_blank" href="https://github.com/Crowd-Wire/ProjectDocumentation/blob/master/Images/Calendar.jpg">
                                     <div class="single-blog">
                                         <div style="align-content: center;" class="blog-photo">
                                             <img style="margin-left: auto; margin-right: auto; display: block; height:200px" src="https://image.flaticon.com/icons/png/128/2755/2755453.png" alt="">
@@ -746,11 +757,9 @@
 
 
 
-
-
-                <footer class="footer-area relative sky-bg" id="contact-page">
+                <!-- <footer class="footer-area relative sky-bg" id="contact-page">
                     <div class="absolute footer-bg"></div>
-                    <div class="footer-top">
+                    <div class="footer-top" style="padding-bottom: 8em">
                         <div class="container">
                             <div class="row">
                                 <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
@@ -762,15 +771,13 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-xs-12 col-md-4">
-                                    <address class="side-icon-boxes">
-                                        <div class="side-icon-box">
+                                        <div class="col-xs-4 side-icon-box">
                                             <div class="side-icon">
                                                 <img src="images/location-arrow.png" alt="">
                                             </div>
                                             <p><strong>Address: </strong> Box 564, Disneyland <br />USA</p>
                                         </div>
-                                        <div class="side-icon-box">
+                                        <div class="col-xs-4 side-icon-box">
                                             <div class="side-icon">
                                                 <img src="images/phone-arrow.png" alt="">
                                             </div>
@@ -779,7 +786,7 @@
                                                 <a href="callto:8801687420471">+8801687420471</a>
                                             </p>
                                         </div>
-                                        <div class="side-icon-box">
+                                        <div class="col-xs-4 side-icon-box">
                                             <div class="side-icon">
                                                 <img src="images/mail-arrow.png" alt="">
                                             </div>
@@ -787,67 +794,22 @@
                                                 <a href="mailto:youremail@example.com">youremail@example.com</a> <br />
                                                 <a href="mailto:youremail@example.com">example@mail.com</a>
                                             </p>
-                                        </div>
-                                    </address>
-                                </div>
-                                <div class="col-xs-12 col-md-8">
-                                    <form action="process.php" id="contact-form" method="post" class="contact-form">
-                                        <div class="form-double">
-                                            <input type="text" id="form-name" name="form-name" placeholder="Your name"
-                                                class="form-control" required="required">
-                                            <input type="email" id="form-email" name="form-email" class="form-control"
-                                                placeholder="E-mail address" required="required">
-                                        </div>
-                                        <input type="text" id="form-subject" name="form-subject" class="form-control"
-                                            placeholder="Message topic">
-                                        <textarea name="message" id="form-message" name="form-message" rows="5" class="form-control"
-                                            placeholder="Your message" required="required"></textarea>
-                                        <button type="sibmit" class="button">Submit</button>
-                                    </form>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="footer-middle">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-6 pull-right">
-                                    <ul class="social-menu text-right x-left">
-                                        <li><a href="#"><i class="ti-facebook"></i></a></li>
-                                        <li><a href="#"><i class="ti-twitter"></i></a></li>
-                                        <li><a href="#"><i class="ti-google"></i></a></li>
-                                        <li><a href="#"><i class="ti-linkedin"></i></a></li>
-                                        <li><a href="#"><i class="ti-github"></i></a></li>
-                                    </ul>
-                                </div>
-                                <div class="col-xs-12 col-sm-6">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id corrupti architecto
-                                        consequuntur, laborum quaerat sed nemo temporibus unde, beatae vel.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="footer-bottom">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-xs-12 text-center">
-                                    <p>&copy;Copyright 2018 All right resurved. This template is made with <i class="ti-heart"
-                                            aria-hidden="true"></i> by <a href="https://colorlib.com">Colorlib</a></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </footer>
+                </footer> -->
+
             </div><!-- wrapper -->
         </div><!-- /container -->
         <nav class="outer-nav right vertical">
             <a href="#home-page" id="outer-nav-home-page">Home</a>
             <a href="#price-page" id="outer-nav-price-page">About</a>
-            <a href="#service-page" id="outer-nav-service-page">Goals</a>
             <a href="#team-page" id="outer-nav-team-page">Team</a>
+            <a href="#service-page" id="outer-nav-service-page">Goals</a>
             <a href="#faq-page" id="outer-nav-faq-page">LogBook</a>
             <a href="#blog-page" id="outer-nav-blog-page">Our Work</a>
-            <a href="#contact-page" id="outer-nav-contact-page">Contact</a>
+            <!-- <a href="#contact-page" id="outer-nav-contact-page">Contact</a> -->
             <div class="card"></div>
             <div class="holo"></div>
         </nav>
