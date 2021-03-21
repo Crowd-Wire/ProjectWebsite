@@ -43,11 +43,11 @@
 		perspectiveWrapper = document.getElementById( 'perspective' ),
 		main_container = perspectiveWrapper.querySelector( '.main_container' ),
 		contentWrapper = main_container.querySelector( '.wrapper' ),
-		
+		//mudar vars para o valor do id later on!
 		home_page = document.getElementById( 'outer-nav-home-page' ),
-		service_page = document.getElementById( 'outer-nav-service-page' ),
-		feature_page = document.getElementById( 'outer-nav-feature-page' ),
-		price_page = document.getElementById( 'outer-nav-price-page' ),
+		service_page = document.getElementById( 'outer-nav-price-page' ),
+		//feature_page = document.getElementById( 'outer-nav-feature-page' ),
+		price_page = document.getElementById( 'outer-nav-service-page' ),
 		team_page = document.getElementById( 'outer-nav-team-page' ),
 		faq_page = document.getElementById( 'outer-nav-faq-page' ),
 		blog_page = document.getElementById( 'outer-nav-blog-page' ),
@@ -121,7 +121,7 @@
 					document.body.scrollTop = document.documentElement.scrollTop = docscroll;
 					// change top of contentWrapper
 					contentWrapper.style.top = '0px';
-					document.getElementById("service-page").scrollIntoView({behavior: 'smooth'});
+					document.getElementById("price-page").scrollIntoView({behavior: 'smooth'});
 				};
 				if( support ) {
 					perspectiveWrapper.addEventListener( transEndEventName, onEndTransFn );
@@ -133,7 +133,7 @@
 			}
 		});
 
-
+		/*
 		feature_page.addEventListener( clickevent, function( ev ) {
 			if( classie.has( perspectiveWrapper, 'animate') ) {
 				var onEndTransFn = function( ev ) {
@@ -155,7 +155,7 @@
 				classie.remove( perspectiveWrapper, 'animate' );
 			}
 		});
-
+		*/
 
 		price_page.addEventListener( clickevent, function( ev ) {
 			if( classie.has( perspectiveWrapper, 'animate') ) {
@@ -167,7 +167,7 @@
 					document.body.scrollTop = document.documentElement.scrollTop = docscroll;
 					// change top of contentWrapper
 					contentWrapper.style.top = '0px';
-					document.getElementById("price-page").scrollIntoView({behavior: 'smooth'});
+					document.getElementById("service-page").scrollIntoView({behavior: 'smooth'});
 				};
 				if( support ) {
 					perspectiveWrapper.addEventListener( transEndEventName, onEndTransFn );
