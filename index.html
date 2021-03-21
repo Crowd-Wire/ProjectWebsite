@@ -76,7 +76,25 @@
         .single-blog .blog-content {
             height: 12em;
         }
-        
+
+        .box-chico {
+            background: #29bdb5;
+            box-shadow: rgba(16, 194, 155, 0.19) 0px 10px 20px, rgba(4, 136, 125, 0.23) 0px 6px 6px;
+            border-radius: 6px;
+            cursor: pointer;
+            /* height: 15rem; */
+            /* line-height: 15rem; */
+            text-align: center;
+            transition-property: background, border-radius;
+            transition-duration: 1s;
+            transition-timing-function: linear;
+            /* width: 15rem; */
+            padding: 1rem;
+        }
+        .box-chico:hover {
+            background: #08bdbd;
+            border-radius: 50%;
+        }
 
     </style>
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
@@ -133,7 +151,7 @@
                 </div>
                 <!--Mainmenu-area/-->
 
-
+                
 
                 <!--Header-area-->
                 <header class="header-area overlay full-height relative v-center" id="home-page">
@@ -179,7 +197,6 @@
                 </section>
                 
                 <!--About Us-area/-->
-
 
                 
                 <!--Feature-area/-->
@@ -646,8 +663,7 @@
                     </div>
                 </section> -->
 
-
-                <section class="gray-bg overlay section-padding" id="faq-page">
+                <section id="top-of-site-pixel-anchor" class="gray-bg overlay section-padding" id="faq-page">
                     <div class="container">
                         <div class="row">
                             <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
@@ -660,12 +676,13 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+                            <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 text-center">
                                 <div class="panel-group" id="accordion">
                                     <div class="panel">
                                         <h4 class="panel-title">
                                             <a data-toggle="collapse" data-parent="#accordion" href="#collapse1"
                                                 aria-expanded="true">15/03/21 - First Meeting with Advisor.</a>
+                                                <h3>Subscribers</h3>
                                         </h4>
                                         <div id="collapse1" class="panel-collapse collapse in">
                                             <p> In this meetings with our Project Advisor, we got to know what was this project about,
@@ -694,9 +711,14 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="box-chico ">
+                                    <h1 class="counter" data-target="15" style="font-size: 10rem; width: 2ch; padding-left: 42%">15</h1>
+                                    <h2 style="width: 15ch; padding-left: 42%">WORK HOURS</h1>
+                                </div>
                             </div>
                         </div>
                     </div>
+                   
                 </section>
 
 
@@ -711,45 +733,57 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-xs-12 col-sm-4" style="height:500px">
-                                <a target="_blank" href="https://github.com/Crowd-Wire/CrowdWire">
-                                    <div class="single-blog">
-                                        <div class="blog-photo">
-                                            <img style="margin-left: auto; margin-right: auto; display: block; height:200px" src="https://image.flaticon.com/icons/png/128/1005/1005141.png" alt="">
-                                        </div>
-                                        <div class="blog-content">
-                                            <h3>Source Code</h3>
-                                            <p>The Code written: Web App, Media Server, REST API.</p>
-                                        </div>
+                            <div class="col-xs-12 col-sm-4">
+                                <div class="single-blog">
+                                    <div style="align-content: center;" class="blog-photo">
+                                    
+                                        <figure class="snip1104 blue" style="margin-left: auto; margin-right: auto">
+                                            <img style="display: block; height:200px" src="https://image.flaticon.com/icons/png/128/1005/1005141.png" alt="">
+                                            <figcaption>
+                                                <h2>Source <span> Code</span></h2>
+                                            </figcaption>
+                                            
+                                            <a href="https://github.com/Crowd-Wire/CrowdWire"></a>
+                                        </figure>
                                     </div>
-                                </a>
+                                    <div class="blog-content">
+                                        <p>The Code written: Web App, Media Server, REST API.</p>
+                                    </div>
+                                </div>
                             </div>
                             <div class="col-xs-12 col-sm-4"style="height:500px">
                                 <div class="single-blog">
-                                    <a target="_blank" href="https://github.com/Crowd-Wire/ProjectDocumentation">
-                                        <div class="blog-photo">
-                                            <img style="margin-left: auto; margin-right: auto; display: block; height:200px" src="https://image.flaticon.com/icons/png/128/3662/3662789.png" alt="">
-                                        </div>
-                                        <div class="blog-content">
-                                            <h3>Project Planning</h3>
-                                            <p>Documentation about the Project Planning</p>
-                                        </div>
-                                    </a>
+                                    <div style="align-content: center;" class="blog-photo">
+                                        <figure class="snip1104 blue" style="margin-left: auto; margin-right: auto">
+                                            <img style="display: block; height:200px" src="https://image.flaticon.com/icons/png/128/3662/3662789.png" alt="">
+                                            <figcaption>
+                                                <h2>Project <span> Planning</span></h2>
+                                            </figcaption>
+                                            
+                                            <a href="https://github.com/Crowd-Wire/ProjectDocumentation"></a>
+                                        </figure>
+                                    </div>
+                                    <div class="blog-content">
+                                        <p>Documentation about the Project Planning.</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-sm-4"></div>
-                            <div class="col-xs-12 col-sm-4" style="height:500px">
-                                <a target="_blank" href="https://github.com/Crowd-Wire/ProjectDocumentation/blob/master/Images/Calendar.jpg">
+                            <div class="col-xs-12 col-sm-4">
                                     <div class="single-blog">
                                         <div style="align-content: center;" class="blog-photo">
-                                            <img style="margin-left: auto; margin-right: auto; display: block; height:200px" src="https://image.flaticon.com/icons/png/128/2755/2755453.png" alt="">
+                                            <figure class="snip1104 blue" style="margin-left: auto; margin-right: auto">
+                                                <img style="display: block; height:200px" src="images/Calendar.jpg" alt="">
+                                                <figcaption>
+                                                    <h2>Project <span> Calendar</span></h2>
+                                                </figcaption>
+                                                
+                                                <a href="https://github.com/Crowd-Wire/ProjectDocumentation/blob/master/Images/Calendar.jpg"></a>
+                                            </figure>
                                         </div>
                                         <div class="blog-content">
-                                            <h3>Project Calendar</h3>
                                             <p>Calendar with all the milestones to achieve our goals.</p>
                                         </div>
                                     </div>
-                                </a>
                             </div>
                         </div>
                     </div>
@@ -829,7 +863,7 @@
     <script src="js/main.js"></script>
     <script src="js/classie.js"></script>
     <script src="js/menu.js"></script>
-    
+    <script src="js/counter.js"></script>    
 </body>
 
 </html>
