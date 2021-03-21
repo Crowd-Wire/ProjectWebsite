@@ -49,12 +49,14 @@
 		//feature_page = document.getElementById( 'outer-nav-feature-page' ),
 		price_page = document.getElementById( 'outer-nav-service-page' ),
 		team_page = document.getElementById( 'outer-nav-team-page' ),
-		faq_page = document.getElementById( 'outer-nav-faq-page' ),
-		blog_page = document.getElementById( 'outer-nav-blog-page' ),
-		contact_page = document.getElementById( 'outer-nav-contact-page' );
+		log_page = document.getElementById( 'outer-nav-log-page' ),
+		blog_page = document.getElementById( 'outer-nav-blog-page' );
+		// contact_page = document.getElementById( 'outer-nav-contact-page' );
 
 
 		showMenu.addEventListener( clickevent, function( ev ) {
+			$("#outer-nav").css("display", "block");
+
 			ev.stopPropagation();
 			ev.preventDefault();
 			docscroll = scrollY();
@@ -86,6 +88,7 @@
 					onEndTransFn.call();
 				}
 				classie.remove( perspectiveWrapper, 'animate' );
+				$("#outer-nav").css("display", "none");
 			}
 		});
 
@@ -108,6 +111,7 @@
 					onEndTransFn.call();
 				}
 				classie.remove( perspectiveWrapper, 'animate' );
+				$("#outer-nav").css("display", "none");
 			}
 		});
 
@@ -130,6 +134,7 @@
 					onEndTransFn.call();
 				}
 				classie.remove( perspectiveWrapper, 'animate' );
+				$("#outer-nav").css("display", "none");
 			}
 		});
 
@@ -153,6 +158,7 @@
 					onEndTransFn.call();
 				}
 				classie.remove( perspectiveWrapper, 'animate' );
+				$("#outer-nav").css("display", "none");
 			}
 		});
 		*/
@@ -176,6 +182,7 @@
 					onEndTransFn.call();
 				}
 				classie.remove( perspectiveWrapper, 'animate' );
+				$("#outer-nav").css("display", "none");
 			}
 		});
 
@@ -199,11 +206,12 @@
 					onEndTransFn.call();
 				}
 				classie.remove( perspectiveWrapper, 'animate' );
+				$("#outer-nav").css("display", "none");
 			}
 		});
 
 
-		faq_page.addEventListener( clickevent, function( ev ) {
+		log_page.addEventListener( clickevent, function( ev ) {
 			if( classie.has( perspectiveWrapper, 'animate') ) {
 				var onEndTransFn = function( ev ) {
 					if( support && ( ev.target.className !== 'main_container' || ev.propertyName.indexOf( 'transform' ) == -1 ) ) return;
@@ -213,7 +221,7 @@
 					document.body.scrollTop = document.documentElement.scrollTop = docscroll;
 					// change top of contentWrapper
 					contentWrapper.style.top = '0px';
-					document.getElementById("faq-page").scrollIntoView({behavior: 'smooth'});
+					document.getElementById("log-page").scrollIntoView({behavior: 'smooth'});
 				};
 				if( support ) {
 					perspectiveWrapper.addEventListener( transEndEventName, onEndTransFn );
@@ -222,6 +230,7 @@
 					onEndTransFn.call();
 				}
 				classie.remove( perspectiveWrapper, 'animate' );
+				$("#outer-nav").css("display", "none");
 			}
 		});
 
@@ -245,30 +254,32 @@
 					onEndTransFn.call();
 				}
 				classie.remove( perspectiveWrapper, 'animate' );
+				$("#outer-nav").css("display", "none");
 			}
 		});
 
-		contact_page.addEventListener( clickevent, function( ev ) {
-			if( classie.has( perspectiveWrapper, 'animate') ) {
-				var onEndTransFn = function( ev ) {
-					if( support && ( ev.target.className !== 'main_container' || ev.propertyName.indexOf( 'transform' ) == -1 ) ) return;
-					this.removeEventListener( transEndEventName, onEndTransFn );
-					classie.remove( perspectiveWrapper, 'modalview' );
-					// mac chrome issue:
-					document.body.scrollTop = document.documentElement.scrollTop = docscroll;
-					// change top of contentWrapper
-					contentWrapper.style.top = '0px';
-					document.getElementById("contact-page").scrollIntoView({behavior: 'smooth'});
-				};
-				if( support ) {
-					perspectiveWrapper.addEventListener( transEndEventName, onEndTransFn );
-				}
-				else {
-					onEndTransFn.call();
-				}
-				classie.remove( perspectiveWrapper, 'animate' );
-			}
-		});
+		// contact_page.addEventListener( clickevent, function( ev ) {
+		// 	if( classie.has( perspectiveWrapper, 'animate') ) {
+		// 		var onEndTransFn = function( ev ) {
+		// 			if( support && ( ev.target.className !== 'main_container' || ev.propertyName.indexOf( 'transform' ) == -1 ) ) return;
+		// 			this.removeEventListener( transEndEventName, onEndTransFn );
+		// 			classie.remove( perspectiveWrapper, 'modalview' );
+		// 			// mac chrome issue:
+		// 			document.body.scrollTop = document.documentElement.scrollTop = docscroll;
+		// 			// change top of contentWrapper
+		// 			contentWrapper.style.top = '0px';
+		// 			document.getElementById("contact-page").scrollIntoView({behavior: 'smooth'});
+		// 		};
+		// 		if( support ) {
+		// 			perspectiveWrapper.addEventListener( transEndEventName, onEndTransFn );
+		// 		}
+		// 		else {
+		// 			onEndTransFn.call();
+		// 		}
+		// 		classie.remove( perspectiveWrapper, 'animate' );
+				$("#outer-nav").css("display", "none");
+		// 	}
+		// });
 
 		perspectiveWrapper.addEventListener( clickevent, function( ev ) { return false; } );
 	}
