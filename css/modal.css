@@ -1,0 +1,77 @@
+/* The Modal (background) */
+.modal-issue {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 999; /* Sit on top */
+    left: 0;
+    width: 100%; /* Full width */
+    overflow: auto; /* Enable scroll if needed */
+    height: 100%;
+}
+
+.submit-button {
+    background-color: transparent;
+    border: 0;
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 50px;
+    font-weight: bold;
+    opacity: 1;
+}
+
+.close:hover,
+.close:focus {
+    color: white;
+    opacity: 1;
+    text-decoration: none;
+    cursor: pointer;
+		-webkit-transition: all 200ms ease-in;
+    transition: all 200ms ease-in;
+}
+
+/* Modal Header */
+.modal-header {
+    padding: 2px 16px;
+    /*background-color: #5cb85c;*/
+    color: white;
+}
+
+/* Modal Body */
+.modal-body {padding: 2px 16px;}
+
+/* Modal Footer 
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}*/
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #138fc2;
+    margin: auto;
+    padding: 0;
+    
+    width: 80%;
+    min-height: 700px;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top: -300px; opacity: 0} 
+    to {top: 0; opacity: 1}
+}
+
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
