@@ -102,6 +102,12 @@
 
     </style>
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <script>
+        function clicked() {
+            var symbol = document.getElementById("promo_video").src.indexOf("?") > -1 ? "&" : "?";
+            document.getElementById("promo_video").src += symbol + "autoplay=1";
+        }
+    </script>
 
 
 </head>
@@ -165,11 +171,11 @@
                             <div class="col-lg-5 col-xs-4 col-md-4 header-text">
                                 <h2>Connect in another Level</h2>
                                 <p> More flexible,interactive and better video-conferencing.</p>
-                                <a href="#" class="button white">Watch video</a>
+                                <a href="#" onclick="clicked()" class="button white" id="start_video">Watch video</a>
                             </div>
                             <div class=" col-lg-7 col-xs-8 col-md-8" style="padding-right: 0%;">
                                 <div id="video-laptop">
-                                    <iframe width="460" height="310" src="https://www.youtube.com/embed/wN1bXpaKijA" frameborder="0"
+                                    <iframe width="460" id="promo_video" height="310" src="https://www.youtube.com/embed/wN1bXpaKijA" frameborder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                                     </iframe>
                                 </div>
@@ -970,7 +976,7 @@
                                 </div>
                                 <div class="box-counter" style="margin-left: auto; margin-right: auto;">
                                     <div style="margin: auto; text-align: center; padding-top: 10%;">
-                                        <h1 class="counter" data-target="1500" style="font-size: 6.5rem; margin: auto;">1500</h1>
+                                        <h1 class="counter" data-target="1000" style="font-size: 6.5rem; margin: auto;">1000</h1>
                                         <h2 style="margin: auto;">WORK HOURS</h1>
                                     </div>
                                 </div>
